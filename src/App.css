@@ -1,0 +1,72 @@
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Center the search bar and submit button at the top of the screen */
+.form-inline {
+  width: 300px;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  margin-top: 10px; /* Add margin to separate from the top */
+}
+
+/* Adjust margins of the form control */
+.form-inline .form-control {
+  margin-right: 10px;
+}
+
+/* Ensure the iframe inside .App doesn't get reduced */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Set the iframe width and height to maintain its aspect ratio */
+.App iframe {
+  width: 100%; /* Full width */
+  flex: 1; /* Take remaining vertical space */
+  display: none
+}
+
+.dropdown-explanation {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.dropdown-model {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
